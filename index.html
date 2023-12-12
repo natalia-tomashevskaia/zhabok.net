@@ -8,14 +8,26 @@
             text-align: center;
             background-color: black; /* Черный фон */
             color: white; /* Белые буквы */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         #frog {
-            max-width: 200px; /* Размер жабки */
+            max-width: 150px; /* Размер жабки */
             cursor: pointer;
         }
         .footer-link {
-            color: white; /* Цвет ссылки */
-            text-decoration: none; /* Убрать подчеркивание */
+            color: green; /* Цвет ссылки */
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .feedback-form {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
         }
     </style>
 </head>
@@ -23,14 +35,18 @@
     <h1>Добро пожаловать в мир жабок!</h1>
     <img id="frog" src="frog.gif" alt="Анимированная жабка" onclick="animateFrog()">
     <p>Кликни на меня!</p> <!-- Текст под жабкой -->
-    <a href="https://t.me/random_frog_bot" class="footer-link">Больше жабок в боте</a> <!-- Ссылка на бота -->
     
     <!-- Форма обратной связи -->
-    <form action="https://formspree.io/f/xleyqkjy" method="POST">
-        <input type="text" name="name" placeholder="Ваше имя" required><br>
-        <textarea name="message" placeholder="Ваше сообщение" required></textarea><br>
-        <input type="submit" value="Отправить">
-    </form>
+    <div class="feedback-form">
+        <form action="https://formspree.io/f/xleyqkjy" method="POST">
+            <input type="text" name="name" placeholder="Ваше имя" required><br>
+            <textarea name="message" placeholder="Ваше сообщение" required></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+
+    <!-- Ссылка на бота -->
+    <a href="https://t.me/random_frog_bot" class="footer-link">Больше жабок в боте</a>
 
     <script>
         function animateFrog() {
