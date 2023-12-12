@@ -39,6 +39,7 @@
         }
         .feedback-form input[type="text"] {
             height: 30px; /* Высота для поля ввода имени */
+            font-family: Arial, sans-serif; /* Шрифт */
         }
         .feedback-form textarea {
             height: 100px; /* Высота текстового поля */
@@ -51,21 +52,21 @@
     </style>
 </head>
 <body>
-    <h1>Ribbit, my dudes</h1>
-    <img id="frog" src="frog.gif" alt="Animated frog" onclick="animateFrog()">
-    <p>Click me :></p> <!-- Текст под жабкой -->
+    <h1>ribbit, my dudes</h1>
+    <img id="frog" src="frog.gif" alt="animated frog" onclick="animateFrog()">
+    <p>click me :></p> <!-- Текст под жабкой -->
 
     <!-- Форма обратной связи -->
     <div class="feedback-form">
         <form action="https://formspree.io/f/xleyqkjy" method="POST">
-            <input type="text" name="name" placeholder="Your name" required><br>
-            <textarea name="message" placeholder="Your ribbit" required></textarea><br>
+            <input type="text" name="name" placeholder="your name" required><br>
+            <textarea name="message" placeholder="your ribbit" required></textarea><br>
             <input type="submit" value="Send">
         </form>
     </div>
 
     <!-- Ссылка на бота -->
-    <a href="https://t.me/random_frog_bot" class="footer-link">More froggos here</a>
+    <a href="https://t.me/random_frog_bot" class="footer-link">more froggos in this tg bot</a>
 
     <script>
         function animateFrog() {
