@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Жабки</title>
+    <title>ribbit</title>
     <style>
         body {
             text-align: center;
@@ -38,31 +38,31 @@
             margin: 5px 0; /* Отступы */
         }
         .feedback-form textarea {
-            height: 100px; /* Увеличенная высота текстового поля */
+            height: 100px; /* Высота текстового поля */
         }
         .feedback-form input[type="submit"] {
-            width: 150px; /* Ширина кнопки */
-            height: 40px; /* Высота кнопки */
+            width: 100px; /* Ширина кнопки */
+            height: 20px; /* Высота кнопки */
             cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать в мир жабок!</h1>
-    <img id="frog" src="frog.gif" alt="Анимированная жабка" onclick="animateFrog()">
-    <p>Кликни на меня!</p> <!-- Текст под жабкой -->
+    <h1>Ribbit, my dudes</h1>
+    <img id="frog" src="frog.gif" alt="Animated frog" onclick="animateFrog()">
+    <p>Click me :></p> <!-- Текст под жабкой -->
 
     <!-- Форма обратной связи -->
     <div class="feedback-form">
         <form action="https://formspree.io/f/xleyqkjy" method="POST">
-            <input type="text" name="name" placeholder="Ваше имя" required><br>
-            <textarea name="message" placeholder="Ваше сообщение" required></textarea><br>
-            <input type="submit" value="Отправить">
+            <input type="text" name="name" placeholder="Your name" required><br>
+            <textarea name="message" placeholder="Your ribbit" required></textarea><br>
+            <input type="submit" value="Send">
         </form>
     </div>
 
     <!-- Ссылка на бота -->
-    <a href="https://t.me/random_frog_bot" class="footer-link">Больше жабок в боте</a>
+    <a href="https://t.me/random_frog_bot" class="footer-link">More froggos here</a>
 
     <script>
         function animateFrog() {
